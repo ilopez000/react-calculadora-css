@@ -1,0 +1,50 @@
+/* Calculadora.css */
+.calculadora-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-calculadora {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.botones-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #bbb;
+}
+
+@media (max-width: 480px) {
+  .calculadora-container {
+    width: 90%;
+  }
+}
